@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text&family=Tilt+Warp&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: 'Tilt Warp', cursive !important;
+}
+
+a{
+    text-decoration: none !important;
+    color: #212121 !important;
+   
+}
+
+button{
+  background-color: darkorange !important;
+  margin: 16px 0px;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+button:hover{
+    background-color: rgba(255, 140, 0, 0.613) !important;
+}
+
+hr {
+    padding: 5px;
+    color: #F273E6 !important;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.nav-link{
+    font-weight: 700 !important;
+    font-size: large !important;
+
+}
+body{
+    font-family: 'Golos Text', sans-serif !important;
+    font-size: 16px !important;
+    overflow-x: hidden;
+}
+
+.logo{
+    max-width: 50px !important;
+    width: 100%;
+}
+
+.section{
+ display: flex;
+ padding: 16px !important;
+}
+
+.slides img{
+    width: 100% ;
+   padding: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.slides img:hover{
+   transition: all ease-in-out;
+    opacity: .8;
+}
+
+
+#myBtnContainer{
+  padding: 15px;
+  z-index: 1200;
+}
+.meet-pet{
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: center;
+}
+
+.col-one {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+   justify-content: center;
+
+
+}
+
+
+.btn-link{
+    padding: 10px;
+    text-align: center !important;
+   width: 120px;
+   max-width: 120px;
+   background-color: darkorange;
+   border-radius: 3px;
+   color: white !important;
+}
+
+.card a {
+    background-color: darkorange !important; 
+    color: white;
+    border: none !important;
+    color: white !important;
+}
+
+.row{
+    margin-top: 16px;
+}
+
+.pets-cards .card{
+    cursor: pointer;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 6px !important;
+}
+
+.pets-cards .card:hover{
+    opacity: .7;
+    scale: 1.02;
+}
+
+  aside p {
+    margin: 0;
+  }
+
+  aside {
+   position: fixed;
+   top: 0;
+   z-index: 200;
+   background: rgba(255, 140, 0, 0.672);
+   border-radius: 5px;
+  padding: 3px;
+  cursor: pointer;
+ display: none;
+  }
+
+  aside:hover{
+    background-color: darkorange;
+  }
+
+
+
+  .hstack{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .sponsor-box{
+
+    background-color: #f273e549;
+    overflow-x: hidden;
+  }
+
+  .sponsor-box img{
+    width: 70px;
+    animation-name: sponsor;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+
+
+
+  @keyframes sponsor {
+    from{
+        transform: translateX(-50px);
+        transition: ease-in-out;
+    }
+    to{
+        transform: translateX(50px);
+    }
+  }
+
+.checkout-box{
+    text-align: center;
+}
+
+.advice img{
+    width: 100%;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.advice img:hover{
+    opacity: .8;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.advice a{
+    background-color: darkorange;
+    padding: 8px;
+    border-radius: 4px;
+    color: white !important;
+}
+
+.advice a:hover{
+    background-color: rgba(255, 140, 0, 0.584);
+    color: black !important;
+}
+
+.get-to-text p, h1 {
+    line-height: 20px;
+}
+
+.get-to img{
+    border-radius: 15px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.show {
+    display: block !important;
+  }
+
+  .content {
+    background-color: white !important;
+  }
+
+  .row:after {
+    content: "";
+    display: table !important;
+    clear: both !important;
+  }
+
+  .content {
+    background-color: white !important;
+    padding: 10px !important;
+  }
+
+  .row,
+.row > .cols {
+  padding: 8px;
+}
+
+.cols {
+    float: left;
+    display: none; /* Hide columns by default */
+  }
+
+  .btn.active {
+    background-color: #666 !important;
+     color: white !important;
+  }
+
+ @media (max-width: 480px){
+    h1, h2 {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+ }
+
+ footer{
+    background-color: #f273e59b;
+    margin-top: 36px;
+    display: flex !important;
+    align-items: top !important;
+    justify-content: center !important;
+   vertical-align: top !important;
+   text-align: center;
+   color: #fff !important;
+ 
+ }
+
+.newsletter {
+    padding: 15px;
+    align-items: center;
+ }
+
+ .newsletter a {
+ border: 1px solid whitesmoke;
+   padding: 10px 25px;
+   background-color: darkorange;
+   border-radius: 6px;
+  
+ }
+
+ footer li{
+    padding: 10px;
+    margin: 5px;
+    list-style-type: none;
+ }
+
+footer ul li a{
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+ @media (max-width: 600px) {
+    .newsletter{
+        display: flex;
+        flex-direction: column;
+    }
+    .newsletter input{
+        max-width: 400px !important;
+    }
+    .newsletter a{
+        width: 50%;
+    }
+ }
+
+
+ .navbar{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: #f0bdebda !important;
+ }
+
+
+ @media only screen and (max-width: 992px){
+    .navbar-collapse{
+       position: relative;
+      
+    }
+
+    .navbar-nav{
+        width: 100vw;
+        height: 100vh ;
+        z-index: 1800 !important;
+        position: absolute;
+        background-color: #b4b4b4;
+       display: flex !important;
+       align-items: center;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+       margin-top: 10px;
+       border-radius: 4px;
+       background-color: #f0bdeb !important;
+    }
+
+    .nav-link{
+        color: white !important;
+    }
+
+    .navbar-nav li {
+        padding: 5px !important;
+        margin-top: 5px !important;
+    }
+}
