@@ -11,7 +11,7 @@ h1, h2, h3 {
 a{
     text-decoration: none !important;
     color: #212121 !important;
-   
+   margin: 10px 0px !important;
 }
 
 button{
@@ -340,5 +340,8 @@ footer ul li a{
     .navbar-nav li {
         padding: 5px !important;
         margin-top: 5px !important;
+    }
+    h1, h2, h3 {
+        line-height: 1.2;
     }
 }
